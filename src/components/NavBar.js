@@ -1,8 +1,6 @@
 import React from 'react';
-import { NavLink, BrowserRouter as Router, Route } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './NavBar.css';
-import Home from './Home';
-import Challenges from './Challenges';
 
 const NavBar = () => {
 
@@ -16,7 +14,6 @@ const burgerToggle = () => {
 }
 
   return (
-    <Router>
       <div>
         <div id="navContainer">
           <nav className="navbar">
@@ -45,12 +42,7 @@ const burgerToggle = () => {
             </div>
           </nav>
         </div>
-
-        <Route exact path="/" component={Home} />
-        <Route path="/challenges" component={Challenges} />
-
       </div>
-  </Router>
   )
 
 };
