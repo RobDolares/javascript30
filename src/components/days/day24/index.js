@@ -1,4 +1,5 @@
 import React from 'react';
+// import styles from './day24.module.css';
 
 const Day24 = () => {
   return (

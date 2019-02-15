@@ -7,9 +7,13 @@ import DayItem from './DayItem';
 
 const DayList = ({onDaySelect}) => {
 
+  const dayList=({onDaySelect, day})=>{
+    return <div onClick={()=>{onDaySelect(day)}}>blah</div>
+  }
+
   const renderedDays = data.public.map((day) => {
     return (
-      <DayItem onDaySelect={onDaySelect} key={day.title} day={day}>{day}</DayItem>
+      <dayList onDaySelect={onDaySelect} key={day.title} day={day}>{day}</dayList>
     )
   })
 
