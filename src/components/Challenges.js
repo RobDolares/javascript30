@@ -1,6 +1,7 @@
 import React from 'react';
 import {Route, Link} from 'react-router-dom';
 import data from './days/data';
+// import DayChallenge from './DayChallenge';
 
 class Challenges extends React.Component {
 state = {
@@ -29,7 +30,9 @@ const arrayCounter = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,2
 // Dynamic Route build for every component
   const dayChallenges = (i)=>{
     return (
+      // <DayChallenge>
         <Route path={`${this.props.match.url}/day${i}`} component={dayMap[`Day${i-1}`]} />
+      // </DayChallenge>
     )
   }
 

@@ -3,9 +3,11 @@ import styles from './day2.module.css';
 
 const Day2 = () => {
   return (
-    <div>
-      <h1 className={styles.test}>Day Two Build</h1>
+    <div className="ui container">
+    <h1 className={styles.dayTitle}>Day 2 Build</h1>
+    <div className={styles.challengeContainer}>
     </div>
+  </div>
   )
 }
 

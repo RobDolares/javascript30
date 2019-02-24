@@ -1,3 +1,9 @@
-.test{
-  color: green;
+.dayTitle{
+  color: rgb(63, 223, 235);
+}
+
+.challengeContainer {
+  height: 90vh;
+  font-size: 10px;
+  background-color: rgb(63, 223, 235)
 }

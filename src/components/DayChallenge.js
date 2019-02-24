@@ -1,5 +1,5 @@
 import React from 'react';
-import Day1 from './days/day1';
+import data from './days/data';
 
 const DayChallenge = (props) => {
 

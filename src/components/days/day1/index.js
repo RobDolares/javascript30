@@ -1,14 +1,22 @@
-import React from 'react';
+import React, {Component} from 'react';
 import styles from './day1.module.css';
+import KeyList from './components/KeyList';
 
-const Day1 = ({data}) => {
+class Day1 extends Component {
 
-  return (
-    <div>
-      <h1 className={styles.test}>Day 1 Build</h1>
-      <p>{data}</p>
+
+
+  render() {
+    return (
+      <div className="ui container">
+      <h1 className={styles.dayTitle}>Day 1 Build</h1>
+      <div className={styles.challengeContainer}>
+        <KeyList styles={styles}/>
+      </div>
     </div>
-)
+    )
+  }
+
 }
 
 export default Day1;
