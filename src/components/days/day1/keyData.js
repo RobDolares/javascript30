@@ -10,56 +10,56 @@ import tink from './sounds/tink.wav';
 
 const keyData = [
     {
-      kbd : 'a',
-      keyCode : 65,
+      kbd : 'q',
+      keyCode : 81,
       sound: 'clap',
       src: clap
     },
     {
-      kbd : 's',
-      keyCode : 83,
+      kbd : 'w',
+      keyCode : 87,
       sound: 'hihat',
       src: hihat
     },
     {
-      kbd : 'd',
-      keyCode : 68,
+      kbd : 'e',
+      keyCode : 69,
       sound: 'kick',
       src: kick
     },
     {
-      kbd : 'f',
-      keyCode : 70,
+      kbd : 'a',
+      keyCode : 65,
       sound: 'openhat',
       src: openhat
     },
     {
-      kbd : 'g',
-      keyCode : 71,
+      kbd : 's',
+      keyCode : 83,
       sound: 'boom',
       src: boom
     },
     {
-      kbd : 'h',
-      keyCode : 72,
+      kbd : 'd',
+      keyCode : 68,
       sound: 'ride',
       src: ride
     },
     {
-      kbd : 'j',
-      keyCode : 74,
+      kbd : 'z',
+      keyCode : 90,
       sound: 'snare',
       src: snare
     },
     {
-      kbd : 'k',
-      keyCode : 75,
+      kbd : 'x',
+      keyCode : 88,
       sound: 'tom',
       src: tom
     },
     {
-      kbd : 'l',
-      keyCode : 76,
+      kbd : 'c',
+      keyCode : 67,
       sound: 'tink',
       src: tink
     }

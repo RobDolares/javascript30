@@ -13,19 +13,36 @@
 .key {
   border: .2rem solid black;
   border-radius: 5px;
-  margin: 1rem;
+  margin: 0 auto;
   font-size: 1.5rem;
   padding: 1rem .5rem;
   transition: all .07s ease;
-  width: 100px;
+  min-width: 100px;
   text-align: center;
   color: white;
   background: rgba(0,0,0,0.4);
   text-shadow: 0 0 .5rem black;
 }
 
+
+.active {
+  transform: scale(1.1);
+  border: .2rem solid #ffc600;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  min-width: 100px;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+
 kbd {
-    text-transform: uppercase;
+  text-transform: uppercase;
   display: block;
   font-size: 28px;
   padding: 0.8rem;
@@ -38,14 +55,13 @@ kbd {
   color: #ffc600;
 }
 
-.keys {
-  display: flex;
-  flex: 1;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
-
-.activeKey {
-  display: none !important;
+.keyContainer {
+  padding-top: 140px;
+  height: 360px;
+  width: 400px;
+  display: grid;
+  grid-area: center;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
 }
