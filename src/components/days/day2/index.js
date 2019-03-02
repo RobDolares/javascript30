@@ -1,8 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
-
 import styles from './day2.module.css';
-
 
 class Day2 extends React.Component {
 
@@ -23,11 +21,7 @@ class Day2 extends React.Component {
 //
 // }
 
-
-
 render(){
-
-
   return (
     <div className="ui container">
     <h1 className={styles.dayTitle}>Day 2 Build</h1>
