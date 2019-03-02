@@ -29,6 +29,10 @@ class Pad extends React.Component {
     }
   }
 
+  handleClick(e){
+    console.log(e.target)
+  }
+
   onPlay() {
     const audio = document.getElementById(this.props.pad.kbd);
 
@@ -48,7 +52,7 @@ class Pad extends React.Component {
     const style = this.state.playing ? this.props.styles.active : this.props.styles.key;
 
     return (
-      <div className={style} key={this.props.pad.kbd} data-key={this.props.pad.keyCode}>
+      <div onClick={this.handleClick} className={style} key={this.props.pad.kbd} data-key={this.props.pad.keyCode}>
         <kbd>{this.props.pad.kbd}</kbd>
         <span className={this.props.styles.sound}>{this.props.pad.sound}</span>
         <audio id={this.props.pad.kbd} data-key={this.props.pad.keyCode} src={this.props.pad.src}></audio>
