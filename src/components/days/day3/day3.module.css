@@ -1,3 +1,47 @@
-.test{
-  color: green;
+:root {
+  --spacing: 10px;
+  --blur: 5px;
+  --baseColor: rgb(154, 26, 138);
+}
+
+.dayTitle {
+  color: var(--baseColor);
+  text-shadow: 2px 1px 2px black;
+}
+
+.challengeContainer {
+  text-align: center;
+  background-color: #193549;
+  color: white;
+  font-family: "helvetica neue", sans-serif;
+  font-weight: 100;
+  padding: 50px;
+}
+
+.challengeContainer>h2{
+  font-size: 40px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.controls div {
+  margin: 0.2em auto;
+}
+
+.highlighted {
+  color: var(--baseColor);
+}
+
+img {
+  margin-top:1em;
+  max-width: 100%;
+  padding: var(--spacing);
+  background: var(--baseColor);
+  filter: blur(var(--blur));
 }

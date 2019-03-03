@@ -15,6 +15,10 @@ componentDidMount(){
   setInterval(()=> this.setDate(), 1000);
 }
 
+componentDidUnmount(){
+  this.setDate();
+}
+
 setDate(){
   const now = new Date();
   let hour = now.getHours();

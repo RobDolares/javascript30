@@ -1,3 +1,8 @@
-.test{
-  color: green;
+.dayTitle {
+  color: rgb(114, 140, 232);
+  text-shadow: 2px 1px 2px black;
+}
+
+.challengeContainer {
+  height: 90vh;
 }
