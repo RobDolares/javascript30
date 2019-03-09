@@ -1,4 +1,5 @@
 import React from 'react';
+import withUser from './withUser'
 
 const Home = () => {
   return (
@@ -12,4 +13,4 @@ const Home = () => {
   )
 };
 
-export default Home;
+export default withUser(Home);
